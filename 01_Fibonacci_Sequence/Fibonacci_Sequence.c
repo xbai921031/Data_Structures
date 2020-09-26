@@ -9,9 +9,9 @@
 typedef char uint8;
 
 /* Recursive method */
-uint8 Fibonacci_1(uint8 n)
+int Fibonacci_1(int n)
 {
-    if (n <= 1)
+    if(n <= 1)
     {
         return 1;
     }
@@ -22,12 +22,12 @@ uint8 Fibonacci_1(uint8 n)
 }
 
 /* Iterative method */
-uint8 Fibonacci_2(uint8 n)
+int Fibonacci_2(int n)
 {
-    uint8 i;
-    uint8 First_temp = 1;
-    uint8 Second_temp = 1;
-    uint8 Calc_item = First_temp + Second_temp;
+    int i;
+    int First_temp = 1;
+    int Second_temp = 1;
+    int Calc_item = First_temp + Second_temp;
 
     for(i = 3;i <= n;i ++)
     {
@@ -41,8 +41,8 @@ uint8 Fibonacci_2(uint8 n)
 
 int main(void)
 {
-    uint8 result_1;
-    uint8 result_2;
+    int result_1;
+    int result_2;
 
     result_1 = Fibonacci_1(6);
     result_2 = Fibonacci_2(6);
