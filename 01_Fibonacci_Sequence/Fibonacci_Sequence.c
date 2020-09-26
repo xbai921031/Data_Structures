@@ -6,8 +6,6 @@
 * Author        : xbai
 ***************************************************/
 #include <stdio.h>
-typedef char uint8;
-
 /* Recursive method */
 int Fibonacci_1(int n)
 {
